@@ -1,0 +1,433 @@
+[2025-04-06T05:53:48.624Z] Starting bot initialization...
+[2025-04-06T05:53:48.630Z] Connected to primary RPC: https://bsc-mainnet.infura.io/v3/2acd67a7a87446fabc0602afcff6eff4
+[2025-04-06T05:53:48.682Z] Wallet address: 0xEC6c09E7024900a25AA69d01812aDFF01D50DC68
+[2025-04-06T05:53:48.692Z] No execution history found, starting fresh
+[2025-04-06T05:53:48.694Z] Bot initialized successfully
+[2025-04-06T05:53:48.694Z] Bot running in EXECUTION mode
+[2025-04-06T05:53:48.695Z] Starting arbitrage bot...
+[2025-04-06T05:53:52.419Z] Connected to BSC at block 48112338
+[2025-04-06T05:53:54.646Z] Wallet balance: 0.174332114 BNB
+[2025-04-06T05:53:59.595Z] Contract validation successful. Owner: 0xEC6c09E7024900a25AA69d01812aDFF01D50DC68
+[2025-04-06T05:54:01.632Z] PancakeSwap router validated. Factory: 0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73
+[2025-04-06T05:54:04.074Z] BiSwap router validated. Factory: 0x858E3312ed3A876947EA49d572A7C42DE08af7EE
+[2025-04-06T05:54:04.075Z] Using contract: 0x1BE03f82EAbE1C898b83A3eDa696886247e8669e
+[2025-04-06T05:54:04.075Z] Using PancakeSwap router: 0x10ED43C718714eb63d5aA57B78B54704E256024E
+[2025-04-06T05:54:04.075Z] Using BiSwap router: 0x3a6d8cA21D1CF76F653A67577FA0D27453350dD8
+[2025-04-06T05:54:04.076Z] Using token addresses: ["0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56","0x55d398326f99059fF775485246999027B3197955","0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d","0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c","0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82","0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"]
+[2025-04-06T05:54:04.076Z] Bot is contract owner. Checking and authorizing pairs...
+[2025-04-06T05:54:04.086Z] ERROR: Pair 0x69D3646Da5bfaA30BA1e5255d3960EeE9ca0a5cF does not exist or is not accessible: bad address checksum (argument="address", value="0x69D3646Da5bfaA30BA1e5255d3960EeE9ca0a5cF", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T05:54:04.087Z] ERROR: Pair 0x1483767D036cB1eeC27AE15f7A85dE41e1aA87A2 does not exist or is not accessible: bad address checksum (argument="address", value="0x1483767D036cB1eeC27AE15f7A85dE41e1aA87A2", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T05:54:04.088Z] ERROR: Pair 0xA0C3Ef24eeF06Be6c8f5e9aD44d647B38bD87A8B does not exist or is not accessible: bad address checksum (argument="address", value="0xA0C3Ef24eeF06Be6c8f5e9aD44d647B38bD87A8B", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T05:54:04.088Z] ERROR: Pair 0x259196C42c7737C4F6AD845A90d9920Beb7bF310 does not exist or is not accessible: bad address checksum (argument="address", value="0x259196C42c7737C4F6AD845A90d9920Beb7bF310", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T05:54:09.152Z] Pair 0xc7c3cCCE4FA25700fD5574DA7E200ae28BBd36A3 already authorized
+[2025-04-06T05:54:09.580Z] Authorizing PancakeSwap pair: 0x0eD7e52944161450477ee417DE9Cd3a859b14fD0
+[2025-04-06T05:54:09.588Z] Pair 0xEc6557348085Aa57C72514D67070dC863C0a5A8c already authorized
+[2025-04-06T05:54:09.590Z] Pair 0xDA8ceb724A06819c0A5cDb4304ea0cB27F8304cF already authorized
+[2025-04-06T05:54:09.592Z] Authorizing PancakeSwap pair: 0x804678fa97d91B974ec2af3c843270886528a9E6
+[2025-04-06T05:54:09.595Z] Pair 0xaCAac9311b0096E04Dfe96b6D87dec867d3883Dc already authorized
+[2025-04-06T05:54:09.596Z] Pair 0x2354ef4DF11afacb85a5C7f98B624072ECcddbB1 already authorized
+[2025-04-06T05:54:09.597Z] Authorizing PancakeSwap pair: 0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16
+[2025-04-06T05:54:18.165Z] ERROR: Failed to authorize pair 0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16: processing response error (body="{\"jsonrpc\":\"2.0\",\"error\":{\"code\":-32000,\"message\":\"INTERNAL_ERROR: could not replace existing tx\"},\"id\":98}", error={"code":-32000}, requestBody="{\"method\":\"eth_sendRawTransaction\",\"params\":[\"0x02f8cf38078459682f008459682f0082bf4c941be03f82eabe1c898b83a3eda696886247e8669e80b86481598e8900000000000000000000000058f876857a02d6762e0101bb5c46a8c1ed44dc1600000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001c080a0f79be2fec87ecfb6ea1b0fef5716290c7dc6bac298a0abcfad75de46a4431059a00c1c0dd9bf388538db29a744e867c23187dee8f76859dbaec5e941437bfd8427\"],\"id\":98,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="https://bsc-mainnet.infura.io/v3/2acd67a7a87446fabc0602afcff6eff4", code=SERVER_ERROR, version=web/5.8.0)
+[2025-04-06T05:54:23.024Z] Successfully authorized 0x804678fa97d91B974ec2af3c843270886528a9E6
+[2025-04-06T05:54:42.156Z] ERROR: Failed to authorize pair 0x0eD7e52944161450477ee417DE9Cd3a859b14fD0: transaction was replaced [ See: https://links.ethers.org/v5-errors-TRANSACTION_REPLACED ] (cancelled=true, reason="replaced", replacement={"hash":"0x382dc4df9ad6c889e27d241f8950c64ac078bd1ba6736a5e86833d18ada3ff53","type":2,"accessList":[],"blockHash":"0x3e6d56e22b9da16c02ec13d9a3f6cff94989f395e7f6ffbb43995ab1690c9e99","blockNumber":48112348,"transactionIndex":60,"confirmations":7,"from":"0xEC6c09E7024900a25AA69d01812aDFF01D50DC68","gasPrice":{"type":"BigNumber","hex":"0x59682f00"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x59682f00"},"maxFeePerGas":{"type":"BigNumber","hex":"0x59682f00"},"gasLimit":{"type":"BigNumber","hex":"0xbf4c"},"to":"0x1BE03f82EAbE1C898b83A3eDa696886247e8669e","value":{"type":"BigNumber","hex":"0x00"},"nonce":7,"data":"0x81598e89000000000000000000000000804678fa97d91b974ec2af3c843270886528a9e600000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001","r":"0xa4de6d5bf665548033b02ffea05797dc58eaaaddc26d4d9fcfbb460c3a8f631a","s":"0x6e002d3a26b11f88ece5d92857067d69880a3688024f1370e56a09e636014053","v":1,"creates":null,"chainId":56}, hash="0x96744b2b4d343c9a6a8ace87fb5231b6d2aca5418853174d6cc41a5c11d6ee51", receipt={"to":"0x1BE03f82EAbE1C898b83A3eDa696886247e8669e","from":"0xEC6c09E7024900a25AA69d01812aDFF01D50DC68","contractAddress":null,"transactionIndex":60,"gasUsed":{"type":"BigNumber","hex":"0xbf4c"},"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000200000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000800000000000800000000000000000000000000000000000000000000000000","blockHash":"0x3e6d56e22b9da16c02ec13d9a3f6cff94989f395e7f6ffbb43995ab1690c9e99","transactionHash":"0x382dc4df9ad6c889e27d241f8950c64ac078bd1ba6736a5e86833d18ada3ff53","logs":[{"transactionIndex":60,"blockNumber":48112348,"transactionHash":"0x382dc4df9ad6c889e27d241f8950c64ac078bd1ba6736a5e86833d18ada3ff53","address":"0x1BE03f82EAbE1C898b83A3eDa696886247e8669e","topics":["0xa509802f53aceeac249d104974626ff677a62184ba33c1e9321d74a950df55a7"],"data":"0x000000000000000000000000804678fa97d91b974ec2af3c843270886528a9e600000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001","logIndex":142,"blockHash":"0x3e6d56e22b9da16c02ec13d9a3f6cff94989f395e7f6ffbb43995ab1690c9e99"}],"blockNumber":48112348,"confirmations":7,"cumulativeGasUsed":{"type":"BigNumber","hex":"0x507176"},"effectiveGasPrice":{"type":"BigNumber","hex":"0x59682f00"},"status":1,"type":2,"byzantium":true}, code=TRANSACTION_REPLACED, version=providers/5.8.0)
+[2025-04-06T05:54:42.159Z] Pair authorization check completed
+[2025-04-06T05:54:43.825Z] Updated BNB price: $590.87
+[2025-04-06T05:54:52.732Z] Updated fee parameters: 
+        PancakeSwap: 25/9975
+        Biswap: 20/9980
+[2025-04-06T05:54:54.587Z] Network health check passed. Gas price: 1.00 Gwei
+[2025-04-06T05:54:57.868Z] Checking for arbitrage opportunities in 2 pairs...
+[2025-04-06T05:54:57.869Z] Checking BUSD-USDT-USDC opportunities...
+[2025-04-06T05:55:00.646Z] Previous check still running, skipping...
+[2025-04-06T05:55:02.672Z] Network health check passed. Gas price: 1.00 Gwei
+[2025-04-06T05:55:16.849Z] Checking arbitrage: BUSD -> USDT -> USDC -> BUSD (PancakeSwap->BiSwap->PancakeSwap)
+[2025-04-06T05:55:19.212Z] Testing loan amount: 1000.0 BUSD
+[2025-04-06T05:55:20.853Z] First swap output: 997.13392857814058129 USDT
+[2025-04-06T05:55:22.461Z] Second swap output: 987.488885694253133768 USDC
+[2025-04-06T05:55:24.256Z] Third swap output: 985.031362996094088738 BUSD
+[2025-04-06T05:55:24.257Z] Checking profitability with:
+            token A: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            token B: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token C: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 1000.0
+            
+[2025-04-06T05:55:24.260Z] Path1: 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56 → 0x55d398326f99059fF775485246999027B3197955
+            Path2: 0x55d398326f99059fF775485246999027B3197955 → 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d
+            Path3: 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d → 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56
+            MinAmountsOut: [
+                987.162589292359175477,
+                977.61399683731060243,
+                975.18104936613314785
+            ]
+[2025-04-06T05:55:24.262Z] ERROR: Error checking profitability: invalid value for array (argument="value", value=undefined, code=INVALID_ARGUMENT, version=contracts/5.8.0)
+[2025-04-06T05:55:24.263Z] Testing loan amount: 10000.0 BUSD
+[2025-04-06T05:55:26.111Z] First swap output: 9924.9076904113762785 USDT
+[2025-04-06T05:55:28.188Z] Second swap output: 9169.156667824591147541 USDC
+[2025-04-06T05:55:30.286Z] Third swap output: 8979.364052798407856316 BUSD
+[2025-04-06T05:55:30.287Z] Checking profitability with:
+            token A: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            token B: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token C: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 10000.0
+            
+[2025-04-06T05:55:30.288Z] Path1: 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56 → 0x55d398326f99059fF775485246999027B3197955
+            Path2: 0x55d398326f99059fF775485246999027B3197955 → 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d
+            Path3: 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d → 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56
+            MinAmountsOut: [
+                9825.658613507262515715,
+                9077.465101146345236065,
+                8889.570412270423777752
+            ]
+[2025-04-06T05:55:30.289Z] ERROR: Error checking profitability: invalid value for array (argument="value", value=undefined, code=INVALID_ARGUMENT, version=contracts/5.8.0)
+[2025-04-06T05:55:30.289Z] Testing loan amount: 50000.0 BUSD
+[2025-04-06T05:55:32.487Z] First swap output: 48618.353447380605553784 USDT
+[2025-04-06T05:55:34.525Z] Second swap output: 34794.054292044219734373 USDC
+[2025-04-06T05:55:36.112Z] Third swap output: 32230.981253408433880316 BUSD
+[2025-04-06T05:55:36.113Z] Checking profitability with:
+            token A: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            token B: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token C: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 50000.0
+            
+[2025-04-06T05:55:36.114Z] Path1: 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56 → 0x55d398326f99059fF775485246999027B3197955
+            Path2: 0x55d398326f99059fF775485246999027B3197955 → 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d
+            Path3: 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d → 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56
+            MinAmountsOut: [
+                48132.169912906799498246,
+                34446.113749123777537029,
+                31908.671440874349541512
+            ]
+[2025-04-06T05:55:36.115Z] ERROR: Error checking profitability: invalid value for array (argument="value", value=undefined, code=INVALID_ARGUMENT, version=contracts/5.8.0)
+[2025-04-06T05:55:36.115Z] Testing loan amount: 100000.0 BUSD
+[2025-04-06T05:55:38.312Z] First swap output: 94834.357309934430076566 USDT
+[2025-04-06T05:55:40.312Z] Second swap output: 53475.028807089904120256 USDC
+[2025-04-06T05:55:42.976Z] Third swap output: 47656.799647760711423067 BUSD
+[2025-04-06T05:55:42.977Z] Checking profitability with:
+            token A: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            token B: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token C: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 100000.0
+            
+[2025-04-06T05:55:42.978Z] Path1: 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56 → 0x55d398326f99059fF775485246999027B3197955
+            Path2: 0x55d398326f99059fF775485246999027B3197955 → 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d
+            Path3: 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d → 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56
+            MinAmountsOut: [
+                93886.0137368350857758,
+                52940.278519019005079053,
+                47180.231651283104308836
+            ]
+[2025-04-06T05:55:42.979Z] ERROR: Error checking profitability: invalid value for array (argument="value", value=undefined, code=INVALID_ARGUMENT, version=contracts/5.8.0)
+[2025-04-06T05:55:42.980Z] No profitable arbitrage found meeting the 1% threshold. Best profit: 0.00%
+[2025-04-06T05:55:42.980Z] Checking arbitrage: USDT -> USDC -> BUSD -> USDT (PancakeSwap->BiSwap->PancakeSwap)
+[2025-04-06T05:55:45.335Z] Testing loan amount: 1000.0 USDT
+[2025-04-06T05:55:47.407Z] First swap output: 993.833013061893490022 USDC
+[2025-04-06T05:55:49.878Z] Second swap output: 97.435248912977391469 BUSD
+[2025-04-06T05:55:51.986Z] Third swap output: 97.204457756633713295 USDT
+[2025-04-06T05:55:51.986Z] Checking profitability with:
+            token A: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token B: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            token C: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 1000.0
+            
+[2025-04-06T05:55:51.987Z] Path1: 0x55d398326f99059fF775485246999027B3197955 → 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d
+            Path2: 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d → 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56
+            Path3: 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56 → 0x55d398326f99059fF775485246999027B3197955
+            MinAmountsOut: [
+                983.894682931274555121,
+                96.460896423847617554,
+                96.232413179067376162
+            ]
+[2025-04-06T05:55:51.989Z] ERROR: Error checking profitability: invalid value for array (argument="value", value=undefined, code=INVALID_ARGUMENT, version=contracts/5.8.0)
+[2025-04-06T05:55:51.989Z] Testing loan amount: 10000.0 USDT
+[2025-04-06T05:55:54.189Z] First swap output: 9813.385896505842261811 USDC
+[2025-04-06T05:55:56.234Z] Second swap output: 106.859675339424934869 BUSD
+[2025-04-06T05:55:58.433Z] Third swap output: 106.606038397495731606 USDT
+[2025-04-06T05:55:58.434Z] Checking profitability with:
+            token A: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token B: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            token C: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 10000.0
+            
+[2025-04-06T05:55:58.435Z] Path1: 0x55d398326f99059fF775485246999027B3197955 → 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d
+            Path2: 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d → 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56
+            Path3: 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56 → 0x55d398326f99059fF775485246999027B3197955
+            MinAmountsOut: [
+                9715.252037540783839192,
+                105.79107858603068552,
+                105.539978013520774289
+            ]
+[2025-04-06T05:55:58.437Z] ERROR: Error checking profitability: invalid value for array (argument="value", value=undefined, code=INVALID_ARGUMENT, version=contracts/5.8.0)
+[2025-04-06T05:55:58.437Z] Testing loan amount: 50000.0 USDT
+[2025-04-06T05:56:00.292Z] First swap output: 46470.380551646343242959 USDC
+[2025-04-06T05:56:02.530Z] Second swap output: 107.78639904007772674 BUSD
+[2025-04-06T05:56:04.972Z] Third swap output: 107.530510647280881337 USDT
+[2025-04-06T05:56:04.973Z] Checking profitability with:
+            token A: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token B: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            token C: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 50000.0
+            
+[2025-04-06T05:56:04.975Z] Path1: 0x55d398326f99059fF775485246999027B3197955 → 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d
+            Path2: 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d → 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56
+            Path3: 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56 → 0x55d398326f99059fF775485246999027B3197955
+            MinAmountsOut: [
+                46005.676746129879810529,
+                106.708535049676949472,
+                106.455205540808072523
+            ]
+[2025-04-06T05:56:04.977Z] ERROR: Error checking profitability: invalid value for array (argument="value", value=undefined, code=INVALID_ARGUMENT, version=contracts/5.8.0)
+[2025-04-06T05:56:04.978Z] Testing loan amount: 100000.0 USDT
+[2025-04-06T05:56:06.976Z] First swap output: 87174.340544468205958763 USDC
+[2025-04-06T05:56:09.182Z] Second swap output: 107.903370913340602167 BUSD
+[2025-04-06T05:56:11.067Z] Third swap output: 107.647198277116692659 USDT
+[2025-04-06T05:56:11.068Z] Checking profitability with:
+            token A: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token B: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            token C: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 100000.0
+            
+[2025-04-06T05:56:11.069Z] Path1: 0x55d398326f99059fF775485246999027B3197955 → 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d
+            Path2: 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d → 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56
+            Path3: 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56 → 0x55d398326f99059fF775485246999027B3197955
+            MinAmountsOut: [
+                86302.597139023523899175,
+                106.824337204207196145,
+                106.570726294345525732
+            ]
+[2025-04-06T05:56:11.070Z] ERROR: Error checking profitability: invalid value for array (argument="value", value=undefined, code=INVALID_ARGUMENT, version=contracts/5.8.0)
+[2025-04-06T05:56:11.070Z] No profitable arbitrage found meeting the 1% threshold. Best profit: 0.00%
+[2025-04-06T05:56:11.071Z] Checking arbitrage: USDC -> BUSD -> USDT -> USDC (PancakeSwap->BiSwap->PancakeSwap)
+[2025-04-06T05:56:13.091Z] Testing loan amount: 1000.0 USDC
+[2025-04-06T06:01:51.021Z] Starting bot initialization...
+[2025-04-06T06:01:51.027Z] Connected to primary RPC: https://bsc-mainnet.infura.io/v3/2acd67a7a87446fabc0602afcff6eff4
+[2025-04-06T06:01:51.085Z] Wallet address: 0xEC6c09E7024900a25AA69d01812aDFF01D50DC68
+[2025-04-06T06:01:51.096Z] No execution history found, starting fresh
+[2025-04-06T06:01:51.098Z] Bot initialized successfully
+[2025-04-06T06:01:51.098Z] Bot running in EXECUTION mode
+[2025-04-06T06:01:51.099Z] Starting arbitrage bot...
+[2025-04-06T06:01:53.563Z] Connected to BSC at block 48112498
+[2025-04-06T06:01:55.518Z] Wallet balance: 0.174258656 BNB
+[2025-04-06T06:02:00.704Z] Contract validation successful. Owner: 0xEC6c09E7024900a25AA69d01812aDFF01D50DC68
+[2025-04-06T06:02:02.748Z] PancakeSwap router validated. Factory: 0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73
+[2025-04-06T06:02:06.020Z] BiSwap router validated. Factory: 0x858E3312ed3A876947EA49d572A7C42DE08af7EE
+[2025-04-06T06:02:06.021Z] Using contract: 0x1BE03f82EAbE1C898b83A3eDa696886247e8669e
+[2025-04-06T06:02:06.021Z] Using PancakeSwap router: 0x10ED43C718714eb63d5aA57B78B54704E256024E
+[2025-04-06T06:02:06.021Z] Using BiSwap router: 0x3a6d8cA21D1CF76F653A67577FA0D27453350dD8
+[2025-04-06T06:02:06.021Z] Using token addresses: ["0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56","0x55d398326f99059fF775485246999027B3197955","0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d","0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c","0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82","0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"]
+[2025-04-06T06:02:06.021Z] Bot is contract owner. Checking and authorizing pairs...
+[2025-04-06T06:02:06.030Z] ERROR: Pair 0x69D3646Da5bfaA30BA1e5255d3960EeE9ca0a5cF does not exist or is not accessible: bad address checksum (argument="address", value="0x69D3646Da5bfaA30BA1e5255d3960EeE9ca0a5cF", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T06:02:06.031Z] ERROR: Pair 0x1483767D036cB1eeC27AE15f7A85dE41e1aA87A2 does not exist or is not accessible: bad address checksum (argument="address", value="0x1483767D036cB1eeC27AE15f7A85dE41e1aA87A2", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T06:02:06.032Z] ERROR: Pair 0xA0C3Ef24eeF06Be6c8f5e9aD44d647B38bD87A8B does not exist or is not accessible: bad address checksum (argument="address", value="0xA0C3Ef24eeF06Be6c8f5e9aD44d647B38bD87A8B", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T06:02:06.032Z] ERROR: Pair 0x259196C42c7737C4F6AD845A90d9920Beb7bF310 does not exist or is not accessible: bad address checksum (argument="address", value="0x259196C42c7737C4F6AD845A90d9920Beb7bF310", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T06:02:09.828Z] Pair 0xc7c3cCCE4FA25700fD5574DA7E200ae28BBd36A3 already authorized
+[2025-04-06T06:02:09.832Z] Pair 0xEc6557348085Aa57C72514D67070dC863C0a5A8c already authorized
+[2025-04-06T06:02:09.834Z] Authorizing PancakeSwap pair: 0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16
+[2025-04-06T06:02:09.838Z] Pair 0xDA8ceb724A06819c0A5cDb4304ea0cB27F8304cF already authorized
+[2025-04-06T06:02:10.097Z] Pair 0xaCAac9311b0096E04Dfe96b6D87dec867d3883Dc already authorized
+[2025-04-06T06:02:10.100Z] Pair 0x804678fa97d91B974ec2af3c843270886528a9E6 already authorized
+[2025-04-06T06:02:10.101Z] Authorizing PancakeSwap pair: 0x0eD7e52944161450477ee417DE9Cd3a859b14fD0
+[2025-04-06T06:02:10.117Z] Pair 0x2354ef4DF11afacb85a5C7f98B624072ECcddbB1 already authorized
+[2025-04-06T06:02:18.144Z] ERROR: Failed to authorize pair 0x0eD7e52944161450477ee417DE9Cd3a859b14fD0: processing response error (body="{\"jsonrpc\":\"2.0\",\"error\":{\"code\":-32000,\"message\":\"INTERNAL_ERROR: could not replace existing tx\"},\"id\":92}", error={"code":-32000}, requestBody="{\"method\":\"eth_sendRawTransaction\",\"params\":[\"0x02f8cf38088459682f008459682f0082bf4c941be03f82eabe1c898b83a3eda696886247e8669e80b86481598e890000000000000000000000000ed7e52944161450477ee417de9cd3a859b14fd000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001c080a03524b1956eaf2d14e3f6d44bb32f29f9d8377ca62342977513591b5015d37c82a025001a9ae7c9efddc5a8fb189b97303a3d9115516e6fcdea25cfb5f98fe1aa82\"],\"id\":92,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="https://bsc-mainnet.infura.io/v3/2acd67a7a87446fabc0602afcff6eff4", code=SERVER_ERROR, version=web/5.8.0)
+[2025-04-06T06:02:22.996Z] Successfully authorized 0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16
+[2025-04-06T06:02:22.996Z] Pair authorization check completed
+[2025-04-06T06:02:24.571Z] Updated BNB price: $590.87
+[2025-04-06T06:02:32.834Z] Updated fee parameters: 
+        PancakeSwap: 25/9975
+        Biswap: 20/9980
+[2025-04-06T06:02:35.580Z] Network health check passed. Gas price: 1.00 Gwei
+[2025-04-06T06:02:39.251Z] Checking for arbitrage opportunities in 2 pairs...
+[2025-04-06T06:02:39.251Z] Checking BUSD-USDT-USDC opportunities...
+[2025-04-06T06:02:55.895Z] Checking arbitrage: BUSD -> USDT -> USDC -> BUSD (PancakeSwap->BiSwap->PancakeSwap)
+[2025-04-06T06:02:57.463Z] Testing loan amount: 1000.0 BUSD
+[2025-04-06T06:02:59.014Z] First swap output: 996.778349939993352355 USDT
+[2025-04-06T06:03:00.864Z] Second swap output: 987.139575406283181294 USDC
+[2025-04-06T06:03:02.728Z] Third swap output: 984.683703773838850112 BUSD
+[2025-04-06T06:03:02.729Z] Checking profitability with:
+            token A: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            token B: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token C: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 1000.0
+            
+[2025-04-06T06:03:02.730Z] Invalid path data for BUSD
+[2025-04-06T06:03:02.731Z] Testing loan amount: 10000.0 BUSD
+[2025-04-06T06:03:04.300Z] First swap output: 9921.376710766601989425 USDT
+[2025-04-06T06:03:05.910Z] Second swap output: 9166.137900760952203718 USDC
+[2025-04-06T06:03:07.455Z] Third swap output: 8976.468234892003320797 BUSD
+[2025-04-06T06:03:07.456Z] Checking profitability with:
+            token A: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            token B: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token C: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 10000.0
+            
+[2025-04-06T06:03:07.457Z] Invalid path data for BUSD
+[2025-04-06T06:03:07.458Z] Testing loan amount: 50000.0 BUSD
+[2025-04-06T06:03:09.016Z] First swap output: 48601.231657627869205219 USDT
+[2025-04-06T06:03:10.645Z] Second swap output: 34785.269751020718257541 USDC
+[2025-04-06T06:03:12.207Z] Third swap output: 32223.441268832681045924 BUSD
+[2025-04-06T06:03:12.208Z] Checking profitability with:
+            token A: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            token B: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token C: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 50000.0
+            
+[2025-04-06T06:03:12.209Z] Invalid path data for BUSD
+[2025-04-06T06:03:12.209Z] Testing loan amount: 100000.0 BUSD
+[2025-04-06T06:03:13.749Z] First swap output: 94800.17631784821475376 USDT
+[2025-04-06T06:03:15.340Z] Second swap output: 53464.140998957336356919 USDC
+[2025-04-06T06:03:16.933Z] Third swap output: 47648.149886849718826159 BUSD
+[2025-04-06T06:03:16.934Z] Checking profitability with:
+            token A: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            token B: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token C: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 100000.0
+            
+[2025-04-06T06:03:16.935Z] Invalid path data for BUSD
+[2025-04-06T06:03:16.935Z] No profitable arbitrage found meeting the 1% threshold. Best profit: 0.00%
+[2025-04-06T06:03:16.936Z] Checking arbitrage: USDT -> USDC -> BUSD -> USDT (PancakeSwap->BiSwap->PancakeSwap)
+[2025-04-06T06:03:18.511Z] Testing loan amount: 1000.0 USDT
+[2025-04-06T06:03:20.106Z] First swap output: 994.022845986962652989 USDC
+[2025-04-06T06:03:21.645Z] Second swap output: 97.437074963537376488 BUSD
+[2025-04-06T06:03:23.226Z] Third swap output: 97.167526895557929025 USDT
+[2025-04-06T06:03:23.227Z] Checking profitability with:
+            token A: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token B: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            token C: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 1000.0
+            
+[2025-04-06T06:03:23.228Z] Invalid path data for USDT
+[2025-04-06T06:03:23.229Z] Testing loan amount: 10000.0 USDT
+[2025-04-06T06:03:24.780Z] First swap output: 9815.248598631011756962 USDC
+[2025-04-06T06:03:26.327Z] Second swap output: 106.859896375181648237 BUSD
+[2025-04-06T06:03:27.879Z] Third swap output: 106.563759087662390469 USDT
+[2025-04-06T06:03:27.880Z] Checking profitability with:
+            token A: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token B: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            token C: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 10000.0
+            
+[2025-04-06T06:03:27.881Z] Invalid path data for USDT
+[2025-04-06T06:03:27.881Z] Testing loan amount: 50000.0 USDT
+[2025-04-06T06:03:29.449Z] First swap output: 46478.96971921763448603 USDC
+[2025-04-06T06:03:30.994Z] Second swap output: 107.78644528426733712 BUSD
+[2025-04-06T06:03:32.565Z] Third swap output: 107.487688498782768862 USDT
+[2025-04-06T06:03:32.566Z] Checking profitability with:
+            token A: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token B: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            token C: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 50000.0
+            
+[2025-04-06T06:03:32.567Z] Invalid path data for USDT
+[2025-04-06T06:03:32.567Z] Testing loan amount: 100000.0 USDT
+[2025-04-06T06:03:34.205Z] First swap output: 87191.102187445253685193 USDC
+[2025-04-06T06:03:35.760Z] Second swap output: 107.903396613545284678 BUSD
+[2025-04-06T06:03:37.311Z] Third swap output: 107.604309125176392709 USDT
+[2025-04-06T06:03:37.312Z] Checking profitability with:
+            token A: USDT (0x55d398326f99059fF775485246999027B3197955)
+            token B: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            token C: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 100000.0
+            
+[2025-04-06T06:03:37.313Z] Invalid path data for USDT
+[2025-04-06T06:03:37.313Z] No profitable arbitrage found meeting the 1% threshold. Best profit: 0.00%
+[2025-04-06T06:03:37.313Z] Checking arbitrage: USDC -> BUSD -> USDT -> USDC (PancakeSwap->BiSwap->PancakeSwap)
+[2025-04-06T06:03:38.985Z] Testing loan amount: 1000.0 USDC
+[2025-04-06T06:03:40.574Z] First swap output: 997.482977756125684798 BUSD
+[2025-04-06T06:03:42.143Z] Second swap output: 993.276954919533665461 USDT
+[2025-04-06T06:03:43.685Z] Third swap output: 987.363024861639930837 USDC
+[2025-04-06T06:03:43.686Z] Checking profitability with:
+            token A: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            token B: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            token C: USDT (0x55d398326f99059fF775485246999027B3197955)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 1000.0
+            
+[2025-04-06T06:03:43.687Z] Invalid path data for USDC
+[2025-04-06T06:03:43.687Z] Testing loan amount: 10000.0 USDC
+[2025-04-06T06:03:45.637Z] First swap output: 9774.88841074056767732 BUSD
+[2025-04-06T06:03:47.279Z] Second swap output: 9446.189417706455268289 USDT
+[2025-04-06T06:03:49.147Z] Third swap output: 9278.976123483037792929 USDC
+[2025-04-06T06:03:49.148Z] Checking profitability with:
+            token A: USDC (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
+            token B: BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+            token C: USDT (0x55d398326f99059fF775485246999027B3197955)
+            direction: PancakeSwap→BiSwap→PancakeSwap
+            loanAmount: 10000.0
+            
+[2025-04-06T06:03:49.149Z] Invalid path data for USDC
+[2025-04-06T06:03:49.149Z] Testing loan amount: 50000.0 USDC
+[2025-04-06T06:03:51.142Z] First swap output: 44876.524271900988453762 BUSD
+[2025-04-06T06:08:56.023Z] Starting bot initialization...
+[2025-04-06T06:08:56.031Z] Connected to primary RPC: https://bsc-mainnet.infura.io/v3/2acd67a7a87446fabc0602afcff6eff4
+[2025-04-06T06:08:56.092Z] Wallet address: 0xEC6c09E7024900a25AA69d01812aDFF01D50DC68
+[2025-04-06T06:08:56.103Z] No execution history found, starting fresh
+[2025-04-06T06:08:56.104Z] Bot initialized successfully
+[2025-04-06T06:08:56.105Z] Bot running in EXECUTION mode
+[2025-04-06T06:08:56.106Z] Starting arbitrage bot...
+[2025-04-06T06:08:59.842Z] Connected to BSC at block 48112641
+[2025-04-06T06:09:02.329Z] Wallet balance: 0.174185198 BNB
+[2025-04-06T06:09:06.934Z] Contract validation successful. Owner: 0xEC6c09E7024900a25AA69d01812aDFF01D50DC68
+[2025-04-06T06:09:08.878Z] PancakeSwap router validated. Factory: 0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73
+[2025-04-06T06:09:11.214Z] BiSwap router validated. Factory: 0x858E3312ed3A876947EA49d572A7C42DE08af7EE
+[2025-04-06T06:09:11.214Z] Using contract: 0x1BE03f82EAbE1C898b83A3eDa696886247e8669e
+[2025-04-06T06:09:11.215Z] Using PancakeSwap router: 0x10ED43C718714eb63d5aA57B78B54704E256024E
+[2025-04-06T06:09:11.215Z] Using BiSwap router: 0x3a6d8cA21D1CF76F653A67577FA0D27453350dD8
+[2025-04-06T06:09:11.215Z] Using token addresses: ["0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56","0x55d398326f99059fF775485246999027B3197955","0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d","0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c","0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82","0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"]
+[2025-04-06T06:09:11.215Z] Bot is contract owner. Checking and authorizing pairs...
+[2025-04-06T06:09:11.217Z] ERROR: Failed to authorize pair 0x69D3646da5bfaA30BA1e5255d3960EeE9ca0a5CF: bad address checksum (argument="address", value="0x69D3646da5bfaA30BA1e5255d3960EeE9ca0a5CF", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T06:09:11.218Z] ERROR: Failed to authorize pair 0x1483767D036cB1eeC27AE15f7A85de41e1aA87A2: bad address checksum (argument="address", value="0x1483767D036cB1eeC27AE15f7A85de41e1aA87A2", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T06:09:11.220Z] ERROR: Failed to authorize pair 0xA0C3Ef24eef06Be6c8f5e9aD44d647B38bD87A8B: bad address checksum (argument="address", value="0xA0C3Ef24eef06Be6c8f5e9aD44d647B38bD87A8B", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T06:09:11.221Z] ERROR: Failed to authorize pair 0x259196C42c7737C4F6AD845A90d9920Beb7Bf310: bad address checksum (argument="address", value="0x259196C42c7737C4F6AD845A90d9920Beb7Bf310", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T06:09:12.776Z] Pair 0xc7c3cCCE4FA25700fD5574DA7E200ae28BBd36A3 already authorized
+[2025-04-06T06:09:12.778Z] Pair 0xEc6557348085Aa57C72514D67070dC863C0a5A8c already authorized
+[2025-04-06T06:09:12.779Z] Pair 0xaCAac9311b0096E04Dfe96b6D87dec867d3883Dc already authorized
+[2025-04-06T06:09:12.782Z] Pair 0xDA8ceb724A06819c0A5cDb4304ea0cB27F8304cF already authorized
+[2025-04-06T06:09:12.784Z] Pair 0x804678fa97d91B974ec2af3c843270886528a9E6 already authorized
+[2025-04-06T06:09:12.786Z] Pair 0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16 already authorized
+[2025-04-06T06:09:12.788Z] Pair 0x0eD7e52944161450477ee417DE9Cd3a859b14fD0 is not authorized. Authorizing...
+[2025-04-06T06:09:12.803Z] Pair 0x2354ef4DF11afacb85a5C7f98B624072ECcddbB1 already authorized
+[2025-04-06T06:21:44.562Z] Starting bot initialization...
+[2025-04-06T06:21:44.570Z] Connected to primary RPC: https://bsc-mainnet.infura.io/v3/2acd67a7a87446fabc0602afcff6eff4
+[2025-04-06T06:21:44.644Z] Wallet address: 0xEC6c09E7024900a25AA69d01812aDFF01D50DC68
+[2025-04-06T06:21:44.662Z] No execution history found, starting fresh
+[2025-04-06T06:21:44.664Z] Bot initialized successfully
+[2025-04-06T06:21:44.664Z] Bot running in EXECUTION mode
+[2025-04-06T06:21:44.665Z] Starting arbitrage bot...
+[2025-04-06T06:21:47.097Z] Connected to BSC at block 48112896
+[2025-04-06T06:21:49.081Z] Wallet balance: 0.17411174 BNB
+[2025-04-06T06:21:53.414Z] Contract validation successful. Owner: 0xEC6c09E7024900a25AA69d01812aDFF01D50DC68
+[2025-04-06T06:21:56.247Z] PancakeSwap router validated. Factory: 0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73
+[2025-04-06T06:21:59.178Z] BiSwap router validated. Factory: 0x858E3312ed3A876947EA49d572A7C42DE08af7EE
+[2025-04-06T06:21:59.178Z] Using contract: 0x1BE03f82EAbE1C898b83A3eDa696886247e8669e
+[2025-04-06T06:21:59.179Z] Using PancakeSwap router: 0x10ED43C718714eb63d5aA57B78B54704E256024E
+[2025-04-06T06:21:59.179Z] Using BiSwap router: 0x3a6d8cA21D1CF76F653A67577FA0D27453350dD8
+[2025-04-06T06:21:59.179Z] Using token addresses: ["0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c","0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82","0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56","0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c","0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c","0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56","0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c","0x2170Ed0880ac9A755fd29B2688956BD959F933F8","0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"]
+[2025-04-06T06:21:59.180Z] Bot is contract owner. Checking and authorizing pairs...
+[2025-04-06T06:21:59.182Z] ERROR: Failed to authorize pair 0xA0C3Ef24eef06Be6c8f5e9aD44d647B38bD87A8B: bad address checksum (argument="address", value="0xA0C3Ef24eef06Be6c8f5e9aD44d647B38bD87A8B", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T06:21:59.183Z] ERROR: Failed to authorize pair 0x259196C42c7737C4F6AD845A90d9920Beb7Bf310: bad address checksum (argument="address", value="0x259196C42c7737C4F6AD845A90d9920Beb7Bf310", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T06:21:59.185Z] ERROR: Failed to authorize pair 0x5bf6941f029424674bb93A43b79fc46bf4A67c21: bad address checksum (argument="address", value="0x5bf6941f029424674bb93A43b79fc46bf4A67c21", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T06:21:59.187Z] ERROR: Failed to authorize pair 0xD7422F07a6C7C251991897834Dc739c865E72C1e: bad address checksum (argument="address", value="0xD7422F07a6C7C251991897834Dc739c865E72C1e", code=INVALID_ARGUMENT, version=address/5.8.0)
+[2025-04-06T06:22:01.636Z] Pair 0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16 already authorized
+[2025-04-06T06:22:01.638Z] Pair 0x804678fa97d91B974ec2af3c843270886528a9E6 already authorized
+[2025-04-06T06:22:01.639Z] Pair 0xEc6557348085Aa57C72514D67070dC863C0a5A8c is not authorized. Authorizing...
+[2025-04-06T06:22:01.641Z] Pair 0xaCAac9311b0096E04Dfe96b6D87dec867d3883Dc already authorized
+[2025-04-06T06:22:01.642Z] Pair 0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16 already authorized
+[2025-04-06T06:22:01.644Z] Pair 0xF45cd219aEF8618A92BAa7aD848364a158a24F33 is not authorized. Authorizing...
+[2025-04-06T06:22:01.646Z] Pair 0xF45cd219aEF8618A92BAa7aD848364a158a24F33 is not authorized. Authorizing...
+[2025-04-06T06:22:01.647Z] Pair 0x61EB789d75A95CAa3fF50ed7E47b96c132fEc082 is not authorized. Authorizing...
+[2025-04-06T06:22:01.655Z] Pair 0x0eD7e52944161450477ee417DE9Cd3a859b14fD0 already authorized

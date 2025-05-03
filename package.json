@@ -1,0 +1,23 @@
+{
+  "name": "flash-triangular-arbitrage",
+  "version": "1.0.0",
+  "description": "Bot arbitrase untuk flash triangular arbitrage antara PancakeSwap dan BiSwap",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ethers": "^5.7.2",
+    "flash-triangular-arbitrage": "file:",
+    "fs-extra": "^10.1.0",
+    "node-cron": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "author": "",
+  "license": "MIT"
+}
