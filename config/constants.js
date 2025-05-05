@@ -1,15 +1,22 @@
+// File: utils/konstanta.js
+
 const path = require('path');
 
-// RPC configuration
+// RPC configuration dari environment variables
 const BSC_RPC_URL = process.env.BSC_RPC_URL || 'https://bsc-dataseed.binance.org/';
-const BACKUP_RPC_URLS = [
-    'https://bsc-dataseed1.binance.org/',
-    'https://bsc-dataseed2.binance.org/',
-    'https://bsc-dataseed3.binance.org/',
-    'https://bsc-dataseed4.binance.org/',
-    'https://bsc-dataseed1.defibit.io/',
-    'https://bsc-dataseed1.ninicoin.io/'
-];
+
+// Daftar backup RPC dari env
+const BACKUP_RPC_URLS = [];
+
+// Tambahkan URL dari environment variables jika ada
+if (process.env.BSC_RPC_URL1) BACKUP_RPC_URLS.push(process.env.BSC_RPC_URL1);
+if (process.env.BSC_RPC_URL2) BACKUP_RPC_URLS.push(process.env.BSC_RPC_URL2);
+// Jika tidak ada backup yang dikonfigurasi, gunakan default
+if (BACKUP_RPC_URLS.length === 0) {
+    BACKUP_RPC_URLS.push(
+        'https://bsc-dataseed.ninicoin.io/'
+    );
+}
 
 // Transaction and execution settings
 const GAS_PRICE_GWEI = process.env.GAS_PRICE_GWEI || '5';
@@ -17,6 +24,13 @@ const GAS_LIMIT = process.env.GAS_LIMIT || '3000000';
 const MIN_PROFIT_PERCENTAGE = parseFloat(process.env.MIN_PROFIT_PERCENTAGE || '1');
 const MAX_GAS_PRICE_GWEI = parseInt(process.env.MAX_GAS_PRICE_GWEI || '10');
 const EXECUTION_ENABLED = process.env.EXECUTION_ENABLED !== 'false';
+
+// Pengaturan RPC tambahan
+const RPC_TIMEOUT_MS = parseInt(process.env.RPC_TIMEOUT_MS || '30000');
+const RPC_RETRY_COUNT = parseInt(process.env.RPC_RETRY_COUNT || '3');
+const RPC_COOLDOWN_MS = parseInt(process.env.RPC_COOLDOWN_MS || '5000');
+const RPC_HEALTH_CHECK_INTERVAL_MS = parseInt(process.env.RPC_HEALTH_CHECK_INTERVAL_MS || '120000');
+const RPC_DEBUG_ENABLED = process.env.RPC_DEBUG_ENABLED === 'true';
 
 // Paths for data storage
 const BASE_DIR = path.resolve(__dirname, '..');
@@ -26,13 +40,13 @@ const HISTORY_DIR = path.join(DATA_DIR, 'history');
 const HISTORY_FILE = path.join(HISTORY_DIR, 'arbitrage_history.json');
 const STATS_FILE = path.join(HISTORY_DIR, 'performance_stats.json');
 
-// Router addresses
+// Router addresses (tidak diubah)
 const ROUTER_ADDRESSES = {
     PANCAKESWAP: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
     BISWAP: '0x3a6d8cA21D1CF76F653A67577FA0D27453350dD8'
 };
 
-// Token addresses
+// Token addresses (tidak diubah)
 const TOKEN_ADDRESSES = {
     WBNB: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     BUSD: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
@@ -66,7 +80,7 @@ const TOKEN_ADDRESSES = {
     TENFI: '0xd15C444F1199Ae72795eba15E8C1db44E47abF62'
 };
 
-// Pancakeswap pair addresses (frequently used)
+// Pancakeswap pair addresses (tidak diubah)
 const PANCAKESWAP_PAIRS = {
     'WBNB-USDT': '0x16b9a82891338f9bA80E2D6970FddA79D1eb0daE',
     'USDT-BUSD': '0x7EFaEf62fDdCCa950418312c6C91Aef321375A00',
@@ -89,6 +103,11 @@ module.exports = {
     MIN_PROFIT_PERCENTAGE,
     MAX_GAS_PRICE_GWEI,
     EXECUTION_ENABLED,
+    RPC_TIMEOUT_MS,
+    RPC_RETRY_COUNT,
+    RPC_COOLDOWN_MS,
+    RPC_HEALTH_CHECK_INTERVAL_MS,
+    RPC_DEBUG_ENABLED,
     DATA_DIR,
     LOG_DIR,
     HISTORY_DIR,

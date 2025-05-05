@@ -1,0 +1,231 @@
+[2025-05-05T06:20:40.331Z] Initializing bot components...
+[2025-05-05T06:20:42.116Z] Connected to primary RPC: https://go.getblock.io/6939be7237ca4e62b34e702e6ad0f95b#https://bsc-mainnet.infura.io/v3/2acd67a7a87446fabc0602afcff6eff4
+[2025-05-05T06:20:42.167Z] Wallet address: 0xEC6c09E7024900a25AA69d01812aDFF01D50DC68
+[2025-05-05T06:20:42.175Z] No execution history found, starting fresh
+[2025-05-05T06:20:42.176Z] No performance stats found, starting fresh
+[2025-05-05T06:20:42.181Z] Starting arbitrage bot...
+[2025-05-05T06:20:43.033Z] Connected to BSC at block 49121983
+[2025-05-05T06:20:44.733Z] Wallet balance: 0.17411174 BNB
+[2025-05-05T06:20:48.496Z] Contract validation successful. Owner: 0xEC6c09E7024900a25AA69d01812aDFF01D50DC68
+[2025-05-05T06:20:48.497Z] Validating address checksums...
+[2025-05-05T06:20:48.499Z] ERROR: Invalid address format: 0x8f16A4234D629634539A9E39455BB911fEe05061
+Error: bad address checksum (argument="address", value="0x8f16A4234D629634539A9E39455BB911fEe05061", code=INVALID_ARGUMENT, version=address/5.8.0)
+    at Logger.makeError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:238:21)
+    at Logger.throwError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:247:20)
+    at Logger.throwArgumentError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:250:21)
+    at Object.getAddress (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\address\lib\index.js:80:20)
+    at AddressHelper.fixAddressChecksum (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:15:33)
+    at C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:41:51
+    at Array.forEach (<anonymous>)
+    at AddressHelper.validateAddresses (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:33:20)
+    at ArbitrageBot.start (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\bot.js:57:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-05-05T06:20:48.502Z] ERROR: Invalid address format: 0xC5E1C3B7CC9eE570f8588359B27aA599dB9E4721
+Error: bad address checksum (argument="address", value="0xC5E1C3B7CC9eE570f8588359B27aA599dB9E4721", code=INVALID_ARGUMENT, version=address/5.8.0)
+    at Logger.makeError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:238:21)
+    at Logger.throwError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:247:20)
+    at Logger.throwArgumentError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:250:21)
+    at Object.getAddress (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\address\lib\index.js:80:20)
+    at AddressHelper.fixAddressChecksum (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:15:33)
+    at C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:41:51
+    at Array.forEach (<anonymous>)
+    at AddressHelper.validateAddresses (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:33:20)
+    at ArbitrageBot.start (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\bot.js:57:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-05-05T06:20:48.504Z] Address checksum validation completed
+[2025-05-05T06:20:50.736Z] Updated BNB price: $590.02
+[2025-05-05T06:20:57.425Z] Updated fee parameters: 
+        PancakeSwap: 25/9975
+        Biswap: 20/9980
+[2025-05-05T06:20:59.665Z] Network health check passed. Gas price: 1.00 Gwei
+[2025-05-05T06:21:01.487Z] Running initial arbitrage check on all pairs...
+[2025-05-05T06:21:01.487Z] Checking for arbitrage opportunities in 5 pairs...
+[2025-05-05T06:21:01.488Z] Checking WBNB-USDT-BUSD opportunities...
+[2025-05-05T06:21:06.509Z] Cached token details for WBNB (0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c)
+[2025-05-05T06:21:11.700Z] Cached token details for USDT (0x55d398326f99059fF775485246999027B3197955)
+[2025-05-05T06:21:17.013Z] Cached token details for BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+[2025-05-05T06:21:17.013Z] Checking arbitrage: WBNB -> USDT -> BUSD -> WBNB (PancakeSwap->BiSwap->PancakeSwap)
+[2025-05-05T06:21:22.113Z] Stopping arbitrage bot...
+[2025-05-05T06:25:11.262Z] Initializing bot components...
+[2025-05-05T06:25:16.884Z] Connected to primary RPC: https://bsc-mainnet.core.chainstack.com/6d128552c6cf23ce186ac3443302240f#https://go.getblock.io/6939be7237ca4e62b34e702e6ad0f95b#https://bsc-mainnet.infura.io/v3/2acd67a7a87446fabc0602afcff6eff4
+[2025-05-05T06:25:16.934Z] Wallet address: 0xEC6c09E7024900a25AA69d01812aDFF01D50DC68
+[2025-05-05T06:25:16.942Z] No execution history found, starting fresh
+[2025-05-05T06:25:16.943Z] No performance stats found, starting fresh
+[2025-05-05T06:25:16.947Z] Starting arbitrage bot...
+[2025-05-05T06:25:17.090Z] Connected to BSC at block 49122165
+[2025-05-05T06:25:17.309Z] Wallet balance: 0.17411174 BNB
+[2025-05-05T06:25:17.747Z] Contract validation successful. Owner: 0xEC6c09E7024900a25AA69d01812aDFF01D50DC68
+[2025-05-05T06:25:17.748Z] Validating address checksums...
+[2025-05-05T06:25:17.750Z] ERROR: Invalid address format: 0x8f16A4234D629634539A9E39455BB911fEe05061
+Error: bad address checksum (argument="address", value="0x8f16A4234D629634539A9E39455BB911fEe05061", code=INVALID_ARGUMENT, version=address/5.8.0)
+    at Logger.makeError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:238:21)
+    at Logger.throwError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:247:20)
+    at Logger.throwArgumentError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:250:21)
+    at Object.getAddress (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\address\lib\index.js:80:20)
+    at AddressHelper.fixAddressChecksum (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:15:33)
+    at C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:41:51
+    at Array.forEach (<anonymous>)
+    at AddressHelper.validateAddresses (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:33:20)
+    at ArbitrageBot.start (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\bot.js:57:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-05-05T06:25:17.752Z] ERROR: Invalid address format: 0xC5E1C3B7CC9eE570f8588359B27aA599dB9E4721
+Error: bad address checksum (argument="address", value="0xC5E1C3B7CC9eE570f8588359B27aA599dB9E4721", code=INVALID_ARGUMENT, version=address/5.8.0)
+    at Logger.makeError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:238:21)
+    at Logger.throwError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:247:20)
+    at Logger.throwArgumentError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:250:21)
+    at Object.getAddress (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\address\lib\index.js:80:20)
+    at AddressHelper.fixAddressChecksum (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:15:33)
+    at C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:41:51
+    at Array.forEach (<anonymous>)
+    at AddressHelper.validateAddresses (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:33:20)
+    at ArbitrageBot.start (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\bot.js:57:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-05-05T06:25:17.753Z] Address checksum validation completed
+[2025-05-05T06:25:17.954Z] Updated BNB price: $590.03
+[2025-05-05T06:25:18.728Z] Updated fee parameters: 
+        PancakeSwap: 25/9975
+        Biswap: 20/9980
+[2025-05-05T06:25:18.928Z] Network health check passed. Gas price: 1.00 Gwei
+[2025-05-05T06:25:19.143Z] Running initial arbitrage check on all pairs...
+[2025-05-05T06:25:19.143Z] Checking for arbitrage opportunities in 5 pairs...
+[2025-05-05T06:25:19.144Z] Checking WBNB-USDT-BUSD opportunities...
+[2025-05-05T06:25:19.763Z] Cached token details for WBNB (0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c)
+[2025-05-05T06:25:21.040Z] Cached token details for USDT (0x55d398326f99059fF775485246999027B3197955)
+[2025-05-05T06:25:21.615Z] Cached token details for BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+[2025-05-05T06:25:21.616Z] Checking arbitrage: WBNB -> USDT -> BUSD -> WBNB (PancakeSwap->BiSwap->PancakeSwap)
+[2025-05-05T06:25:23.245Z] Testing loan amount: 1000.0 WBNB
+[2025-05-05T06:25:23.428Z] First swap output: 572207.327067637222059679 USDT
+[2025-05-05T06:25:23.620Z] Second swap output: 187548.218695054593641543 BUSD
+[2025-05-05T06:25:23.802Z] Third swap output: 302.958218543850821312 WBNB
+[2025-05-05T06:25:24.005Z] Loan: 1000.0 WBNB ($590033.05), Gross Profit: $0.00, Gas: $3.25, Net Profit: $-3.25 (-0.00%)
+[2025-05-05T06:25:24.006Z] Testing loan amount: 5000.0 WBNB
+[2025-05-05T06:25:24.201Z] First swap output: 2550922.628518179310333597 USDT
+[2025-05-05T06:25:24.379Z] Second swap output: 251550.074953330726153238 BUSD
+[2025-05-05T06:25:24.625Z] Third swap output: 400.607045683774891272 WBNB
+[2025-05-05T06:25:24.834Z] Loan: 5000.0 WBNB ($2950165.24), Gross Profit: $0.00, Gas: $3.25, Net Profit: $-3.25 (-0.00%)
+[2025-05-05T06:25:24.834Z] Testing loan amount: 10000.0 WBNB
+[2025-05-05T06:25:25.028Z] First swap output: 4493077.199015029574406226 USDT
+[2025-05-05T06:25:25.228Z] Second swap output: 262758.549104283142107946 BUSD
+[2025-05-05T06:25:25.419Z] Third swap output: 417.424983592260119593 WBNB
+[2025-05-05T06:25:25.627Z] Loan: 10000.0 WBNB ($5900330.48), Gross Profit: $0.00, Gas: $3.25, Net Profit: $-3.25 (-0.00%)
+[2025-05-05T06:25:25.627Z] Checking arbitrage: USDT -> BUSD -> WBNB -> USDT (PancakeSwap->BiSwap->PancakeSwap)
+[2025-05-05T06:25:28.100Z] Testing loan amount: 1000.0 USDT
+[2025-05-05T06:25:30.856Z] First swap output: 999.408873028623316812 BUSD
+[2025-05-05T06:25:32.041Z] Second swap output: 1.677257123054462702 WBNB
+[2025-05-05T06:25:34.239Z] Third swap output: 989.729280732984985162 USDT
+[2025-05-05T06:25:35.027Z] Stopping arbitrage bot...
+[2025-05-05T06:45:18.543Z] Initializing bot components...
+[2025-05-05T06:45:18.548Z] Initializing provider service...
+[2025-05-05T06:45:18.550Z] RPC Manager initialized with 3 providers
+[2025-05-05T06:45:18.551Z] Checking health of RPC providers...
+[2025-05-05T06:45:18.849Z] Provider 0 (https://bsc-mainnet.core.chainstack.com/*****) is healthy, block: 49122966
+[2025-05-05T06:45:18.945Z] Connected to network: bnb (chainId: 56)
+[2025-05-05T06:45:18.945Z] Current block number: 49122966
+[2025-05-05T06:45:18.995Z] Wallet address: 0xEC6c09E7024900a25AA69d01812aDFF01D50DC68
+[2025-05-05T06:45:19.004Z] No execution history found, starting fresh
+[2025-05-05T06:45:19.005Z] No performance stats found, starting fresh
+[2025-05-05T06:45:19.008Z] Starting arbitrage bot...
+[2025-05-05T06:45:19.009Z] Switching to provider 1 (https://go.getblock.io/*****)
+[2025-05-05T06:45:20.404Z] Connected to BSC at block 49122967
+[2025-05-05T06:45:20.405Z] Provider 1 (https://go.getblock.io/*****) is healthy, block: 49122967
+[2025-05-05T06:45:21.217Z] Provider 2 (https://bsc-mainnet.infura.io/*****) is healthy, block: 49122968
+[2025-05-05T06:45:22.078Z] Wallet balance: 0.17411174 BNB
+[2025-05-05T06:45:25.458Z] Contract validation successful. Owner: 0xEC6c09E7024900a25AA69d01812aDFF01D50DC68
+[2025-05-05T06:45:25.458Z] Validating address checksums...
+[2025-05-05T06:45:25.460Z] ERROR: Invalid address format: 0x8f16A4234D629634539A9E39455BB911fEe05061
+Error: bad address checksum (argument="address", value="0x8f16A4234D629634539A9E39455BB911fEe05061", code=INVALID_ARGUMENT, version=address/5.8.0)
+    at Logger.makeError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:238:21)
+    at Logger.throwError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:247:20)
+    at Logger.throwArgumentError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:250:21)
+    at Object.getAddress (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\address\lib\index.js:80:20)
+    at AddressHelper.fixAddressChecksum (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:15:33)
+    at C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:41:51
+    at Array.forEach (<anonymous>)
+    at AddressHelper.validateAddresses (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:33:20)
+    at ArbitrageBot.start (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\bot.js:57:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-05-05T06:45:25.462Z] ERROR: Invalid address format: 0xC5E1C3B7CC9eE570f8588359B27aA599dB9E4721
+Error: bad address checksum (argument="address", value="0xC5E1C3B7CC9eE570f8588359B27aA599dB9E4721", code=INVALID_ARGUMENT, version=address/5.8.0)
+    at Logger.makeError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:238:21)
+    at Logger.throwError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:247:20)
+    at Logger.throwArgumentError (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\logger\lib\index.js:250:21)
+    at Object.getAddress (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\node_modules\@ethersproject\address\lib\index.js:80:20)
+    at AddressHelper.fixAddressChecksum (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:15:33)
+    at C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:41:51
+    at Array.forEach (<anonymous>)
+    at AddressHelper.validateAddresses (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\utils\addressHelper.js:33:20)
+    at ArbitrageBot.start (C:\Users\thoma\Videos\flash-loan-arbitrage-triangular-main\TriangularArbitragePrototype\src\bot.js:57:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-05-05T06:45:25.463Z] Address checksum validation completed
+[2025-05-05T06:45:25.687Z] Updated BNB price: $589.98
+[2025-05-05T06:45:26.476Z] Updated fee parameters: 
+        PancakeSwap: 25/9975
+        Biswap: 20/9980
+[2025-05-05T06:45:26.661Z] Network health check passed. Gas price: 1.00 Gwei
+[2025-05-05T06:45:26.859Z] Running initial arbitrage check on all pairs...
+[2025-05-05T06:45:26.860Z] Checking for arbitrage opportunities in 5 pairs...
+[2025-05-05T06:45:26.861Z] Checking WBNB-USDT-BUSD opportunities...
+[2025-05-05T06:45:27.531Z] Cached token details for WBNB (0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c)
+[2025-05-05T06:45:28.109Z] Cached token details for USDT (0x55d398326f99059fF775485246999027B3197955)
+[2025-05-05T06:45:28.706Z] Cached token details for BUSD (0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
+[2025-05-05T06:45:28.706Z] Checking arbitrage: WBNB -> USDT -> BUSD -> WBNB (PancakeSwap->BiSwap->PancakeSwap)
+[2025-05-05T06:45:29.903Z] Testing loan amount: 1000.0 WBNB
+[2025-05-05T06:45:30.129Z] First swap output: 571578.583962942193219297 USDT
+[2025-05-05T06:45:30.331Z] Second swap output: 187480.909781721360246229 BUSD
+[2025-05-05T06:45:30.532Z] Third swap output: 302.883139915333797182 WBNB
+[2025-05-05T06:45:30.738Z] Loan: 1000.0 WBNB ($589975.17), Gross Profit: $0.00, Gas: $3.89, Net Profit: $-3.89 (-0.00%)
+[2025-05-05T06:45:30.739Z] Testing loan amount: 5000.0 WBNB
+[2025-05-05T06:45:30.941Z] First swap output: 2548271.935410510770883656 USDT
+[2025-05-05T06:45:31.153Z] Second swap output: 251524.628771089705522641 BUSD
+[2025-05-05T06:45:32.386Z] Third swap output: 400.60697765865373856 WBNB
+[2025-05-05T06:45:32.585Z] Loan: 5000.0 WBNB ($2949875.87), Gross Profit: $0.00, Gas: $3.89, Net Profit: $-3.89 (-0.00%)
+[2025-05-05T06:45:32.586Z] Testing loan amount: 10000.0 WBNB
+[2025-05-05T06:45:32.771Z] First swap output: 4488671.664595482307690539 USDT
+[2025-05-05T06:45:32.989Z] Second swap output: 262743.832498494921887274 BUSD
+[2025-05-05T06:45:33.182Z] Third swap output: 417.442721983016541165 WBNB
+[2025-05-05T06:45:33.477Z] Loan: 10000.0 WBNB ($5899751.74), Gross Profit: $0.00, Gas: $3.89, Net Profit: $-3.89 (-0.00%)
+[2025-05-05T06:45:33.477Z] Checking arbitrage: USDT -> BUSD -> WBNB -> USDT (PancakeSwap->BiSwap->PancakeSwap)
+[2025-05-05T06:45:37.802Z] Testing loan amount: 1000.0 USDT
+[2025-05-05T06:45:39.004Z] First swap output: 999.335948485415336167 BUSD
+[2025-05-05T06:45:40.202Z] Second swap output: 1.677135499133721574 WBNB
+[2025-05-05T06:45:40.413Z] Third swap output: 988.592855016509743264 USDT
+[2025-05-05T06:45:40.605Z] Loan: 1000.0 USDT ($1000.00), Gross Profit: $0.00, Gas: $3.89, Net Profit: $-3.89 (-0.39%)
+[2025-05-05T06:45:40.606Z] Testing loan amount: 5000.0 USDT
+[2025-05-05T06:45:42.835Z] First swap output: 4986.458091400505060392 BUSD
+[2025-05-05T06:45:43.030Z] Second swap output: 8.16577266992372995 WBNB
+[2025-05-05T06:45:45.309Z] Third swap output: 4812.432444466301524891 USDT
+[2025-05-05T06:45:45.492Z] Loan: 5000.0 USDT ($5000.00), Gross Profit: $0.00, Gas: $3.89, Net Profit: $-3.89 (-0.08%)
+[2025-05-05T06:45:45.493Z] Testing loan amount: 10000.0 USDT
+[2025-05-05T06:45:45.667Z] First swap output: 9947.479375757513736067 BUSD
+[2025-05-05T06:45:45.864Z] Second swap output: 15.813191699525803408 WBNB
+[2025-05-05T06:45:47.051Z] Third swap output: 9317.31302485398445384 USDT
+[2025-05-05T06:45:48.396Z] Loan: 10000.0 USDT ($10000.00), Gross Profit: $0.00, Gas: $3.89, Net Profit: $-3.89 (-0.04%)
+[2025-05-05T06:45:48.397Z] Checking arbitrage: BUSD -> WBNB -> USDT -> BUSD (PancakeSwap->BiSwap->PancakeSwap)
+[2025-05-05T06:45:53.828Z] Testing loan amount: 1000.0 BUSD
+[2025-05-05T06:45:54.028Z] First swap output: 1.68589544442539039 WBNB
+[2025-05-05T06:45:55.297Z] Second swap output: 992.358016064867195729 USDT
+[2025-05-05T06:45:55.513Z] Third swap output: 991.722629490543800609 BUSD
+[2025-05-05T06:45:56.895Z] Loan: 1000.0 BUSD ($1000.00), Gross Profit: $0.00, Gas: $3.89, Net Profit: $-3.89 (-0.39%)
+[2025-05-05T06:45:56.896Z] Testing loan amount: 5000.0 BUSD
+[2025-05-05T06:45:58.278Z] First swap output: 8.421610517839244833 WBNB
+[2025-05-05T06:45:59.535Z] Second swap output: 4888.228079966287122278 USDT
+[2025-05-05T06:46:00.857Z] Third swap output: 4875.36435729635899134 BUSD
+[2025-05-05T06:46:03.071Z] Loan: 5000.0 BUSD ($5000.00), Gross Profit: $0.00, Gas: $3.89, Net Profit: $-3.89 (-0.08%)
+[2025-05-05T06:46:03.071Z] Testing loan amount: 10000.0 BUSD
+[2025-05-05T06:46:03.289Z] First swap output: 16.823595522798751254 WBNB
+[2025-05-05T06:46:03.507Z] Second swap output: 9598.574209070634084308 USDT
+[2025-05-05T06:46:05.772Z] Third swap output: 9550.306875520271404789 BUSD
+[2025-05-05T06:46:05.974Z] Loan: 10000.0 BUSD ($10000.00), Gross Profit: $0.00, Gas: $3.89, Net Profit: $-3.89 (-0.04%)
+[2025-05-05T06:46:05.974Z] Checking arbitrage: WBNB -> USDT -> BUSD -> WBNB (BiSwap->PancakeSwap->BiSwap)
+[2025-05-05T06:46:08.288Z] Testing loan amount: 1000.0 WBNB
+[2025-05-05T06:46:08.728Z] First swap output: 190492.127247575870714417 USDT
+[2025-05-05T06:46:08.902Z] Second swap output: 173518.970333886029010304 BUSD
+[2025-05-05T06:46:09.118Z] Third swap output: 140.385695620156148143 WBNB
+[2025-05-05T06:46:10.314Z] Loan: 1000.0 WBNB ($589975.17), Gross Profit: $0.00, Gas: $3.89, Net Profit: $-3.89 (-0.00%)
+[2025-05-05T06:46:10.314Z] Testing loan amount: 5000.0 WBNB
+[2025-05-05T06:46:10.514Z] First swap output: 256722.593377922554848626 USDT
+[2025-05-05T06:46:11.730Z] Second swap output: 226850.782719694746245848 BUSD
+[2025-05-05T06:46:13.253Z] Third swap output: 158.20424228564861647 WBNB
+[2025-05-05T06:46:14.455Z] Loan: 5000.0 WBNB ($2949875.87), Gross Profit: $0.00, Gas: $3.89, Net Profit: $-3.89 (-0.00%)
+[2025-05-05T06:46:14.456Z] Testing loan amount: 10000.0 WBNB
+[2025-05-05T06:46:14.832Z] Stopping arbitrage bot...
